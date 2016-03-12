@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lewisshaw/php-iterate.svg?branch=master)](https://travis-ci.org/lewisshaw/php-iterate)
+
 Example
 ```php
 <?php
