@@ -1,5 +1,5 @@
 <?php
-namespace IterateTest\iterators;
+namespace IterateTest\Iterators;
 
 use Iterate\Iterators\All;
 
