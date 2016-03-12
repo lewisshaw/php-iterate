@@ -22,4 +22,9 @@ class ArrayIterator extends \ArrayIterator
     {
         return $this->runIterator(new Iterators\All, $callback);
     }
+
+    public function Find(Callable $callback)
+    {
+        return $this->runIterator(new Iterators\Find, $callback);
+    }
 }

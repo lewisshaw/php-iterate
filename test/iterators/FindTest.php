@@ -1,0 +1,16 @@
+<?php
+namespace IterateTest\iterators;
+
+use Iterate\Iterators\Find;
+
+class FindTest extends \PHPUnit_Framework_TestCase
+{
+    public function testFindReturnsExpectedResult()
+    {
+        $finder = new Find;
+        $numbers = [2,4,6,8];
+        $result = $finder->iterate($numbers, function ($number) { return $number % 2 == 0; } );
+        $this->assertEquals(2, $result);
+    }
+
+}
