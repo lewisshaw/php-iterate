@@ -1,0 +1,18 @@
+{
+    "name": "lewisshaw/iterate",
+    "description": "Utilities for PHP similar to enumerable in Ruby, for avoiding looping through iterable structures",
+    "authors": [
+        {
+            "name": "lewisshaw",
+            "email": "lms530@york.ac.uk"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {"Iterate\\": "src/"},
+        "files": ["src/functions.php"]
+    }
+}
