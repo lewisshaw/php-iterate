@@ -23,8 +23,13 @@ class ArrayIterator extends \ArrayIterator
         return $this->runIterator(new Iterators\All, $callback);
     }
 
-    public function Find(Callable $callback)
+    public function find(Callable $callback)
     {
         return $this->runIterator(new Iterators\Find, $callback);
+    }
+
+    public function eachElement(Callable $callback)
+    {
+        $this->runIterator(new Iterators\EachElement, $callback);
     }
 }
