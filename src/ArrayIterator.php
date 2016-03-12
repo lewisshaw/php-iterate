@@ -5,7 +5,6 @@ class ArrayIterator extends \ArrayIterator
 {
     private function runIterator(Iterators\IteratorInterface $iterator, Callable $callback)
     {
-        var_dump($this->getArrayCopy());
         return $iterator->iterate($this->getArrayCopy(), $callback);
     }
 
