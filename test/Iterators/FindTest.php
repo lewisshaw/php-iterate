@@ -13,4 +13,12 @@ class FindTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(2, $result);
     }
 
+    public function testFindReturnsNullIfNoneFound()
+    {
+        $finder = new Find;
+        $numbers = [1,3,5,7];
+        $result = $finder->iterate($numbers, function ($number) { return $number % 2 == 0; } );
+        $this->assertEquals(null, $result);
+    }
+
 }
